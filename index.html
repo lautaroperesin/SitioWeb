@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Premium</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/icono.ico">
+    <script src="js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+        <header>    <!--barra de navegacion-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="imgs/SpotifyLogo.png" alt="" width="200px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
+        </header>
+
+        <section class="container" id="beneficios"> <!--Seccion de beneficios-->
+        <div class="container">
+        <h2 id="tituloBeneficios">Beneficios de ser Premium</h2>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">  <!--Carrusel 1-->
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imgs/descargaMusica.png" class="mx-auto d-block img-fluid" alt="...">
+                <div class="paratexto">
+                  <h5>Descargá tu música</h5>
+                  <p>Escuchala en el lugar que quieras.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">   <!--Carrusel 2-->
+                <img src="imgs/anuncios.png" class="mx-auto d-block img-fluid" alt="..." width="280px">
+                <div class="paratexto">
+                  <h5>Escuchá música sin anuncios.</h5>
+                  <p>Disfrutá de tu música sin interrupciones.</p>
+                </div>
+              </div>
+              <div class="carousel-item">  <!--Carrusel 3-->
+                <img src="imgs/cancion.png" class="mx-auto d-block img-fluid" alt="...">
+                <div class="paratexto">
+                  <h5>Escuchá la canción que quieras.</h5>
+                  <p>Incluso en dispositivos móviles.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        </section>
+
+        <section class="container" id="plan"> <!--Seccion de planes-->
+        <h2 id="tituloPlan">Eligí tu plan</h2>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Individual</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$599<small class="text-body-secondary fw-light"> al mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1 cuenta</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Dúo</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$799<small class="text-body-secondary fw-light"> al mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>2 cuentas</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Familiar</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$999<small class="text-body-secondary fw-light"> al mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Hasta 6 cuentas</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+    
+        <section class="container" id="comparacion">  <!--Seccion de comparacion de planes-->
+           <table class="table text-center">  <!--Tabla de comparacion-->
+                <h2 id="tituloComparacion">Comparacion de planes</h2>
+                <tr>
+                  <th style="width: 34%;"></th>
+                  <th style="width: 22%;">Individual</th>
+                  <th style="width: 22%;">Dúo</th>
+                  <th style="width: 22%;">Familiar</th>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Música sin anuncios</th>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Prepagá o suscribite</th>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+      
+                <tr>
+                  <th scope="row" class="text-start">Spotify Kids</th>
+                  <td></td>
+                  <td></td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">2 cuentas o más</th>
+                  <td></td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Bloqueo de música con contenido explícito</th>
+                  <td></td>
+                  <td></td>
+                  <td>✔</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="container" id="musica"> <!--Seccion de musica-->
+        <h4 id="tituloMusica">Agrega tu cancion favorita a la lista</h4>
+
+        <div class="boton container">   <!--Boton de agregar cancion-->
+          <button class="btn btn-primary-agregar" data-bs-toggle="modal" data-bs-target="#agregarEditarModal">AGREGAR CANCION</button>
+        </div>
+
+          <div class="container" id="contenedorCanciones">   <!--Contenedor de canciones(js)-->
+          </div>
+        </section>
+        
+                <!-- Modal agregar CANCIONES-->
+<div class="modal fade" id="agregarEditarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar cancion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="agregarEditarForm" onsubmit="return false;">
+          <input type="hidden" id="txtId">
+          <label for="txtCancion" class="form-label">Cancion:</label>
+          <input type="text" id="txtCancion" class="form-control mb-3" required>
+          <label for="txtArtista" class="form-label">Artista(s):</label>
+          <input type="text" id="txtArtista" class="form-control mb-3" required>
+          <label for="txtPortada" class="form-label">URL de la portada:</label>
+          <input type="text" id="txtPortada" class="form-control mb-3" required>
+          <input type="submit" value="Agregar" class="form-control btn btn-primary" onclick="appCanciones.guardarCancion();">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

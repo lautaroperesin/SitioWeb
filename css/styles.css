@@ -1,0 +1,185 @@
+.navbar{
+    background-color: rgb(53, 153, 6);
+    padding: 20px;
+}
+
+#tituloBeneficios{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bolder
+}
+
+
+#tituloPlan{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#plan{
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+#tituloComparacion{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+#tituloMusica{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+#musica{    /*Contenedor musica*/
+    background-color: #efefef;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.carousel-inner{   /*Carrusel*/
+    height: 450px; 
+}
+.paratexto{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.modal-content{  /*Modales*/
+    background-color: rgb(13 47 21);
+    color: azure;
+}
+.btn-close{
+    background-color: white;
+}
+
+.card-header{   /*Cabecera de las cartas(planes)*/
+    background-color: rgb(53, 153, 6);
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary {   /*Boton de AGREGAR*/
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgb(53, 153, 6);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(53, 153, 6, 0.39);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
+}
+
+.btn-outline-primary {  /*Botones de COMPRAR(planes)*/
+    --bs-btn-color: rgb(0, 0, 0);
+    --bs-btn-border-color: rgb(53, 153, 6);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(53, 153, 6, 0.404);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(53, 153, 6);
+    --bs-btn-active-border-color: rgb(53, 153, 6);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: none;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: none;
+    --bs-gradient: none;
+}
+
+.btn-primary-agregar{   /*Boton agregar cancion*/
+    font-weight: bolder;
+    width: 400px;
+    height: 55px;
+    margin: 20px;
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: rgba(53, 153, 6, 0.5);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(53, 153, 6);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(53, 153, 6);
+    --bs-btn-active-border-color:rgb(53, 153, 6);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: rgb(53, 153, 6);
+    --bs-btn-disabled-border-color: rgb(53, 153, 6);
+}
+
+.btn-primary-eliminar {   /*Boton de eliminar*/
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgba(201, 38, 9, 0.521);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(201, 38, 9);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
+}
+#eliminar{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary-editar{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgba(8, 4, 245, 0.521);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(27, 3, 240);
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
+}
+#editar{
+    height: 20px;
+    width: 20px;
+}
+
+.boton{     /*Boton agregar cancion centrado*/
+    display: flex;
+    justify-content: center;
+}
+
+.img{   /*Portada canciones*/
+    height: 150px;
+    width: 275px;
+    border-radius: 10px;
+}
+
+.canciones{     /*Div de canciones*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
